@@ -11,7 +11,7 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="title">
+    <div class="title" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
         <div class="nav">
             <div class="logo"><a href="">Treby</a></div>
             <ul>
@@ -30,7 +30,36 @@
     </div>
     
     <div class="content">
+        <article uk-scrollspy="cls: uk-animation-slide-left-small; target: .artspy; delay: 100; repeat: false">
+            <h2 class="artspy">Příběhy nekonečných světů</h2>
+            <h6 class="artspy">Napsal Tom Stejskal, 12.12.2020</h6>
+            <p class="artspy">Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.</strong> Sed convallis magna eu sem. Etiam posuere lacus quis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p class="artspy">Nunc tincidunt ante vitae massa. Etiam bibendum elit eget erat. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+            <hr class="artspy">
+            <div class="uk-position-relative uk-visible-toggle uk-light artspy" tabindex="-1" uk-slideshow="animation: push">
 
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="img/ama.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/hora.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/treking.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/winter.jpg" alt="" uk-cover>
+                    </li>
+                </ul>
+    
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+            </div>
+            <hr class="artspy">
+            <p class="artspy">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+        </article>
     </div>
 </body>
 </html>

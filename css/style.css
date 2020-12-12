@@ -3,8 +3,8 @@ a, h1, h2, h3, h4, h5, h6, p{
     font-family: "Playfair Display";
 }
 ::selection {
-    background: rgb(255, 255, 255);
-    color: rgb(94, 94, 94);
+    background: rgb(235, 235, 235);
+    color: rgb(63, 63, 63);
     text-shadow: none;
 }
 body{
@@ -16,9 +16,9 @@ body{
     align-items: flex-end;
     height: 568px;
     width: 100%;
-    background: url(../img/winter.jpg);
+    background: url(../img/yellowstone.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     overflow: hidden;
     flex-direction: column;
 }
@@ -27,8 +27,9 @@ body{
 }
 .header{
     margin: auto auto 88px;
+    padding: 0 24px;    
 }
-.header h1,p{
+.header h1,.header p{
     color: rgb(247, 247, 247);
     text-shadow: 6px 6px 7px rgb(61, 61, 61);
 }
@@ -66,4 +67,34 @@ body{
 .nav a{
     color: rgb(236, 236, 236);
     transition: 0.4s;
+}
+article{
+    max-width: 840px;
+    margin:  24px auto 0;
+    padding: 0 24px;
+    line-height: 1.625;
+}
+h2{
+    font-size: 32px;
+    margin: 0 0 7px;
+}
+h6{
+    font-size: 16px;
+    margin: 0 0 18px;
+}
+article p{
+    font-size: 18px;
+    text-indent: 48px;
+    margin: 0 0 8px;
+}
+strong{
+    font-weight: 900;
+}
+.source{
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+.sourcevis{
+    visibility: visible;
+    transition: 0.5s ease-in-out;
 }
