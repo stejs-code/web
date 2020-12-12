@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&display=swap');
+a, h1, h2, h3, h4, h5, h6, p{
+    font-family: "Playfair Display";
+}
+::selection {
+    background: rgb(255, 255, 255);
+    color: rgb(94, 94, 94);
+    text-shadow: none;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.title{
+    display: flex;
+    align-items: flex-end;
+    height: 568px;
+    width: 100%;
+    background: url(../img/winter.jpg);
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    flex-direction: column;
+}
+.content{
+    height: 1000vh;
+}
+.header{
+    margin: auto auto 88px;
+}
+.header h1,p{
+    color: rgb(247, 247, 247);
+    text-shadow: 6px 6px 7px rgb(61, 61, 61);
+}
+.header h1{
+    font-size: 44px;
+
+}
+.header p{
+    font-size: 24px;
+}
+.nav{
+    display: flex;
+    z-index: 980;
+    height: 68px;
+    width: 100vw;
+    align-items: center;
+    align-self: flex-start;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+.nav li{
+    padding: 18px;
+}
+.nav ul a{
+    font-size: 22px;
+}
+.logo{
+    padding: 18px;
+    font-size: 32px;
+}
+.nav a{
+    color: rgb(236, 236, 236);
+    transition: 0.4s;
+}
