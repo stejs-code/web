@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/js/uikit-icons.min.js"></script>
+    <script src="https://kit.fontawesome.com/66c5ad4d22.js" crossorigin="anonymous"></script>
     <script src="js/script-min.js"></script>
     <script src="js/script.js"></script>
+    
     <title>Home</title>
 </head>
 <body>
@@ -17,18 +19,16 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Art</a></li>
-                <li><a href="#">Galery</a></li>
+                <li><a href="galerry">Galerry</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#"></a></li>
             </ul>
         </div>
-    
         <div class="header">
             <h1 uk-parallax="opacity: 1,0; y: 0,120; viewport: 0.5">Lorem impsum dolor</h1>
             <p uk-parallax="opacity: 1,0; y: 0,100; viewport: 0.5">Lorem ipsum dolor sit amet, consectetuer elit</p>
         </div>
     </div>
-    
     <div class="content">
         <article uk-scrollspy="cls: uk-animation-slide-left-small; target: .artspy; delay: 100; repeat: false">
             <h2 class="artspy">Lorem impsum dolor</h2>
@@ -36,6 +36,7 @@
             <p class="artspy">Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.</strong> Sed convallis magna eu sem. Etiam posuere lacus quis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             <p class="artspy">Nunc tincidunt ante vitae massa. Etiam bibendum elit eget erat. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
             <hr class="artspy">
+            <h3 class="artspy">Lorem impsum</h3>
             <div class="uk-position-relative uk-visible-toggle uk-light artspy" tabindex="-1" uk-slideshow="animation: push">
 
                 <ul class="uk-slideshow-items">
@@ -59,7 +60,35 @@
             </div>
             <hr class="artspy">
             <p class="artspy">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+            <h3 class="artspy">Lorem impsum</h3>
+            <p class="artspy">Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Aenean placerat. Etiam quis quam. Nulla non arcu lacinia neque faucibus fringilla. Etiam quis quam. Nunc auctor. Praesent dapibus. Mauris elementum mauris vitae tortor. Morbi scelerisque luctus velit. Praesent dapibus. Phasellus et lorem id felis nonummy placerat. Nunc auctor. </p>
         </article>
+    </div>
+    <div class="footer" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .container; delay: 100; repeat: false">
+            <div>
+                <div class="container">
+                <h2>Sociální sítě</h2>
+                <p>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-discord"></i></a>
+                    <a href=""><i class="fab fa-twitch"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </p>
+            </div>
+            <div class="container">
+                <h2>Kontakt</h2>
+                <p>
+                    <a href="">example@example.com</a><br>
+                    Šeránkova 4<br>
+                    616 00 Brno-Žabovřesky
+                </p>
+            </div>
+            
+        </div>
+        <h6>Design by <a href="https://github.com/stejs-code">stejs</a></h6>
     </div>
 </body>
 </html>

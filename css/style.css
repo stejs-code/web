@@ -3,8 +3,8 @@ a, h1, h2, h3, h4, h5, h6, p{
     font-family: "Playfair Display";
 }
 ::selection {
-    background: rgb(235, 235, 235);
-    color: rgb(63, 63, 63);
+    background: rgb(143, 143, 143);
+    color: rgb(221, 221, 221);
     text-shadow: none;
 }
 body{
@@ -21,9 +21,6 @@ body{
     background-position: center center;
     overflow: hidden;
     flex-direction: column;
-}
-.content{
-    height: 1000vh;
 }
 .header{
     margin: auto auto 88px;
@@ -73,6 +70,9 @@ body{
     color: rgb(236, 236, 236);
     transition: 0.4s;
 }
+.content{
+    margin-bottom: 48px;
+}
 article{
     max-width: 840px;
     margin:  24px auto 0;
@@ -83,9 +83,17 @@ h2{
     font-size: 32px;
     margin: 0 0 7px;
 }
+h3{
+    margin: 0 0 7px;
+    text-align: center;
+    font-weight: 600;
+}
 h6{
     font-size: 16px;
     margin: 0 0 18px;
+}
+hr{
+    margin: 7px 0;
 }
 article p{
     font-size: 18px;
@@ -95,11 +103,52 @@ article p{
 strong{
     font-weight: 900;
 }
-.source{
-    visibility: hidden;
-    transition: 0.5s ease-in-out;
+
+.footer{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+    padding: 48px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-flow: row wrap;
 }
-.sourcevis{
-    visibility: visible;
-    transition: 0.5s ease-in-out;
+
+.footer .container{
+    margin: 0 24px;
+    min-width: 272px;
+}
+.footer h2, .footer p, .footer i{
+    margin: 0;
+    color: rgb(240, 240, 240)
+    
+}
+.footer i{
+    font-size: 32px;
+    margin-right: 7px;
+}
+.footer h2{
+    margin: 0 0 7px;
+}
+.footer p{
+    margin-left: 8px;
+    color: rgb(247, 247, 247);
+    font-size: 18px;
+}
+.footer a{
+    color: rgb(247, 247, 247)
+}
+.footer h6{
+    width: 100vw;
+    text-align: right;
+    color: rgb(247, 247, 247);
+    margin: 7px 24px 0;
+}
+.footer > div{
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 0 auto;
 }
