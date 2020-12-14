@@ -16,9 +16,6 @@ body{
     align-items: flex-end;
     height: 568px;
     width: 100%;
-    background: url(../img/yellowstone.jpg);
-    background-size: cover;
-    background-position: center center;
     overflow: hidden;
     flex-direction: column;
 }
@@ -97,7 +94,6 @@ hr{
 }
 article p{
     font-size: 18px;
-    text-indent: 48px;
     margin: 0 0 8px;
 }
 strong{
@@ -116,7 +112,7 @@ strong{
 }
 
 .footer .container{
-    margin: 0 24px;
+    margin: 0 24px 16px;
     min-width: 272px;
 }
 .footer h2, .footer p, .footer i{
@@ -151,4 +147,10 @@ strong{
     justify-content: flex-start;
     flex-flow: row wrap;
     margin: 0 auto;
+}
+.gallery{
+    margin: 24px 7px 0;
+}
+.gallery img{
+    padding: 0 20px;
 }
