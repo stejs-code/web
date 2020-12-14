@@ -152,5 +152,6 @@ strong{
     margin: 24px 7px 0;
 }
 .gallery img{
-    padding: 0 20px;
+    margin: 0!important;
+    padding: 5px!important
 }
