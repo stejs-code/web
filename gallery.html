@@ -13,6 +13,9 @@
     <title>Home</title>
 </head>
 <body>
+    <div class="loader uk-flex uk-flex-center">
+        <div uk-spinner="ratio: 1.5"></div>
+    </div>
     <div class="title" style="background: url(img/nepal.jpg);" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
         <div class="nav">
             <div class="logo"><a href="index.html">Treby</a></div>
@@ -73,7 +76,7 @@
             </div>
             
         </div>
-        <h6>Design by <a href="https://github.com/stejs-code">stejs</a></h6>
+        <h6 uk-scrollspy="cls: uk-animation-slide-right-small; repeat: false">Design by <a href="https://github.com/stejs-code">stejs</a></h6>
     </div>
 </body>
 </html>
