@@ -2,10 +2,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.13/dist/js/uikit-icons.min.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
     <script src="https://kit.fontawesome.com/66c5ad4d22.js" crossorigin="anonymous"></script>
     <script src="js/script-min.js"></script>
     <script src="js/script.js"></script>
@@ -19,13 +19,15 @@
     <div class="title" style="background: url(img/yellowstone.jpg);background-size: cover; background-position: center center;" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
         <div class="nav">
             <div class="logo"><a href="index.html">Treby</a></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Art</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header">
             <h1 uk-parallax="opacity: 1,0; y: 0,120; viewport: 0.5">Lorem impsum dolor</h1>
@@ -34,13 +36,12 @@
     </div>
     <div class="content">
         <article uk-scrollspy="cls: uk-animation-slide-left-small; target: h1, h2, h3, h4, h5, h6, p, hr, .artspy; delay: 100; repeat: false">
-            <h2 class="artspy">Lorem impsum dolor</h2>
-            <h6 class="artspy">Tom Stejskal, 12.12.2020</h6>
-            <p class="artspy">Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.</strong> Sed convallis magna eu sem. Etiam posuere lacus quis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            <p class="artspy">Nunc tincidunt ante vitae massa. Etiam bibendum elit eget erat. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-            <hr class="artspy">
-            <h3 class="artspy">Lorem impsum</h3>
-            <div class="uk-position-relative uk-visible-toggle uk-light artspy" tabindex="-1" uk-slideshow="animation: push">
+            <h2>Lorem impsum dolor</h2>
+            <h6>Tom Stejskal, 12.12.2020</h6>
+            <p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing elit.</strong> Sed convallis magna eu sem. Etiam posuere lacus quis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>Nunc tincidunt ante vitae massa. Etiam bibendum elit eget erat. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+            <h3>Lorem impsum</h3>
+            <div class="uk-position-relative uk-visible-toggle uk-light artspy slideshow" tabindex="-1" uk-slideshow="animation: push">
 
                 <ul class="uk-slideshow-items">
                     <li>
@@ -61,10 +62,9 @@
                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
     
             </div>
-            <hr class="artspy">
-            <p class="artspy">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
-            <h3 class="artspy">Lorem impsum</h3>
-            <p class="artspy">Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Aenean placerat. Etiam quis quam. Nulla non arcu lacinia neque faucibus fringilla. Etiam quis quam. Nunc auctor. Praesent dapibus. Mauris elementum mauris vitae tortor. Morbi scelerisque luctus velit. Praesent dapibus. Phasellus et lorem id felis nonummy placerat. Nunc auctor. </p>
+            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+            <h3>Lorem impsum</h3>
+            <p>Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Aenean placerat. Etiam quis quam. Nulla non arcu lacinia neque faucibus fringilla. Etiam quis quam. Nunc auctor. Praesent dapibus. Mauris elementum mauris vitae tortor. Morbi scelerisque luctus velit. Praesent dapibus. Phasellus et lorem id felis nonummy placerat. Nunc auctor. </p>
         </article>
     </div>
     <div class="footer" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .container; delay: 100; repeat: false">
@@ -92,6 +92,19 @@
             
         </div>
         <h6 uk-scrollspy="cls: uk-animation-slide-right-small; repeat: false">Design by <a href="https://github.com/stejs-code">stejs</a></h6>
+    </div>
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="menuoff">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
