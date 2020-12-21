@@ -19,7 +19,7 @@
     <div class="title" style="background: url(img/yellowstone.jpg);background-size: cover; background-position: center center;" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
         <div class="nav">
             <div class="logo"><a href="index.html">Treby</a></div>
-            <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">Open</button>
+            <span class="hamburger" style="cursor: pointer" uk-icon="icon: menu; ratio: 1.7" uk-toggle="target: #offcanvas-menu"></span>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -93,10 +93,10 @@
         </div>
         <h6 uk-scrollspy="cls: uk-animation-slide-right-small; repeat: false">Design by <a href="https://github.com/stejs-code">stejs</a></h6>
     </div>
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+    <div id="offcanvas-menu" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <div class="menuoff">
+            <div class="menuoff uk-height-1-1">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Art</a></li>

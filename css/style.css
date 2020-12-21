@@ -60,10 +60,13 @@ body{
     max-width: 840px;
     margin: 0 auto;
 }
+.menu{
+    margin: 0 34px 0 auto;
+}
 .nav ul{
     display: flex;
     list-style: none;
-    margin: 0 0 0 auto;
+    margin: 0;
     padding: 0;
 }
 .nav li{
@@ -75,11 +78,42 @@ body{
 .nav ul a{
     font-size: 22px;
 }
+.uk-offcanvas-bar > .uk-offcanvas-close > svg > line{
+    stroke: #222 !important;
+}
+.uk-offcanvas-bar{
+    background: rgb(255, 255, 255);
+}
+.menuoff{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+.menuoff ul{
+    margin: 0;
+    margin-left: 24px;
+    padding: 0;
+}
+.menuoff li > a{
+    color: rgb(34, 34, 34);
+}
+.menuoff li > a:hover{
+    color: rgb(34, 34, 34);
+    text-decoration: rgb(34, 34, 34);
+}
+.hamburger{
+    display: none;
+    color: rgb(240, 240, 240);
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: 34px;
+    margin-top: 7px;
+}
 .logo{
     padding: 18px;
     font-size: 32px;
 }
-.nav a{
+.nav a, .nav > .hamburger{
     color: rgb(236, 236, 236);
     transition: 0.4s;
 }
@@ -184,7 +218,7 @@ strong{
     .menu{
         display: none;
     }
-    .menucontainer{
+    .hamburger{
         display: block;
     }
   }
