@@ -19,13 +19,15 @@
     <div class="title" style="background: url(img/nepal.jpg);background-size: cover; background-position: center center" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
         <div class="nav">
             <div class="logo"><a href="index.html">Treby</a></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Art</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            <span class="hamburger" style="cursor: pointer" uk-icon="icon: menu; ratio: 1.7" uk-toggle="target: #offcanvas-menu"></span>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header">
             <h1 uk-parallax="opacity: 1,0; y: 0,120; viewport: 0.5">Lorem impsum dolor</h1>
@@ -77,6 +79,19 @@
             
         </div>
         <h6 uk-scrollspy="cls: uk-animation-slide-right-small; repeat: false">Design by <a href="https://github.com/stejs-code">stejs</a></h6>
+    </div>
+    <div id="offcanvas-menu" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="menuoff uk-height-1-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
