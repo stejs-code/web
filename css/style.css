@@ -78,8 +78,8 @@ body{
 .nav ul a{
     font-size: 22px;
 }
-.uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
-    stroke: #222;
+.uk-offcanvas-bar > .uk-offcanvas-close > svg > line{
+    stroke: #222 !important;
 }
 .uk-offcanvas-bar{
     background: rgb(255, 255, 255);
