@@ -75,18 +75,6 @@ body{
 .nav ul a{
     font-size: 22px;
 }
-.uk-offcanvas-bar{
-    background: rgb(236, 236, 236);
-}
-.uk-offcanvas-close{
-    color: rgb(34, 34, 34);
-}
-.menuoff{
-    display: flex;
-    list-style: none;
-    margin: auto 0;
-    padding: 0;
-}
 .logo{
     padding: 18px;
     font-size: 32px;
