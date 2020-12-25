@@ -10,7 +10,7 @@
  */
 html {
   /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Playfair Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
@@ -9590,24 +9590,7 @@ iframe.uk-cover {
 .uk-overlay-primary .uk-heading-medium,
 .uk-overlay-primary .uk-heading-large,
 .uk-overlay-primary .uk-heading-xlarge,
-.uk-overlay-primary .uk-heading-2xlarge,
-.uk-offcanvas-bar h1,
-.uk-offcanvas-bar .uk-h1,
-.uk-offcanvas-bar h2,
-.uk-offcanvas-bar .uk-h2,
-.uk-offcanvas-bar h3,
-.uk-offcanvas-bar .uk-h3,
-.uk-offcanvas-bar h4,
-.uk-offcanvas-bar .uk-h4,
-.uk-offcanvas-bar h5,
-.uk-offcanvas-bar .uk-h5,
-.uk-offcanvas-bar h6,
-.uk-offcanvas-bar .uk-h6,
-.uk-offcanvas-bar .uk-heading-small,
-.uk-offcanvas-bar .uk-heading-medium,
-.uk-offcanvas-bar .uk-heading-large,
-.uk-offcanvas-bar .uk-heading-xlarge,
-.uk-offcanvas-bar .uk-heading-2xlarge {
+.uk-overlay-primary .uk-heading-2xlarge{
   color: #fff;
 }
 .uk-light blockquote,
@@ -9655,9 +9638,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) hr,
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-hr,
 .uk-overlay-primary hr,
-.uk-overlay-primary .uk-hr,
-.uk-offcanvas-bar hr,
-.uk-offcanvas-bar .uk-hr {
+.uk-overlay-primary .uk-hr {
   border-top-color: rgba(255, 255, 255, 0.2);
 }
 .uk-light a.uk-link-muted,
@@ -10318,10 +10299,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-textarea,
 .uk-overlay-primary .uk-input,
 .uk-overlay-primary .uk-select,
-.uk-overlay-primary .uk-textarea,
-.uk-offcanvas-bar .uk-input,
-.uk-offcanvas-bar .uk-select,
-.uk-offcanvas-bar .uk-textarea {
+.uk-overlay-primary .uk-textarea{
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
   background-clip: padding-box;
@@ -10356,10 +10334,7 @@ iframe.uk-cover {
 .uk-card-secondary > :not([class*='uk-card-media']) .uk-textarea:focus,
 .uk-overlay-primary .uk-input:focus,
 .uk-overlay-primary .uk-select:focus,
-.uk-overlay-primary .uk-textarea:focus,
-.uk-offcanvas-bar .uk-input:focus,
-.uk-offcanvas-bar .uk-select:focus,
-.uk-offcanvas-bar .uk-textarea:focus {
+.uk-overlay-primary .uk-textarea:focus {
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 0.7);

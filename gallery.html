@@ -2,24 +2,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/uikit.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/uikit.js"></script>
-    <script src="js/uikit-icons.js"></script>
-    <script src="https://kit.fontawesome.com/66c5ad4d22.js" crossorigin="anonymous"></script>
-    <script src="js/script-min.js"></script>
-    <script src="js/script.js"></script>
-    
+    <link rel="stylesheet" href="css/uikit.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Gallery</title>
 </head>
 <body>
-    <div class="loader uk-flex uk-flex-center">
-        <div uk-spinner="ratio: 1.5"></div>
-    </div>
-    <div class="title" style="background: url(img/nepal.jpg);background-size: cover; background-position: center center" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
+    <nav>
         <div class="nav">
             <div class="logo"><a href="index.html">Treby</a></div>
-            <span class="hamburger" style="cursor: pointer" uk-icon="icon: menu; ratio: 1.7" uk-toggle="target: #offcanvas-menu"></span>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -28,7 +18,16 @@
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
+            <ul class="other">
+                <li class="settings" style="cursor: pointer" uk-tooltip="title: Nastavení; pos: bottom"><span uk-icon="icon: cog; ratio: 1.7" uk-toggle="target: #offcanvas-settings"></span></li>
+                <li class="hamburger" style="cursor: pointer" uk-tooltip="title: Menu; pos: bottom"><span uk-icon="icon: menu; ratio: 1.7" uk-toggle="target: #offcanvas-menu"></span></li>
+            </ul>
         </div>
+        <div class="loader uk-flex uk-flex-center">
+            <div style="color: rgb(236, 236, 236)" uk-spinner="ratio: 1.5"></div>
+        </div>
+        </nav>
+    <div class="title" style="background: url(img/nepal.jpg);background-size: cover; background-position: center center" uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
         <div class="header">
             <h1 uk-parallax="opacity: 1,0; y: 0,120; viewport: 0.5">Lorem impsum dolor</h1>
             <p uk-parallax="opacity: 1,0; y: 0,100; viewport: 0.5">Lorem ipsum dolor sit amet, consectetuer elit</p>
@@ -93,5 +92,38 @@
             </div>
         </div>
     </div>
+    <div id="offcanvas-settings" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar uk-dark">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h2>Nastavení</h2>
+            <h3>Jazyk</h3>
+            <div>
+                <select class="uk-select">
+                    <option>Česky</option>
+                    <option>Slovensky</option>
+                    <option>English</option>
+                </select>
+            </div>
+            <h3>Měna</h3>
+            <div>
+                <select class="uk-select">
+                    <option>Kč</option>
+                    <option>Eur</option>
+                    <option>USD</option>
+                </select>
+            </div>
+            <h3>Vzhled</h3>
+            <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-expand" uk-leader>Dark mode</div>
+                <div><label onchange="buttonChange('switcher')" class="switch"><input id="switcher" type="checkbox"><span class="slider"></span></label></div>
+            </div>
+            <p style="margin-top: 118px">*Dark/Light mode zatím není spuštěn, přepínač cen a jazyků též!<br></p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <script src="https://kit.fontawesome.com/66c5ad4d22.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
